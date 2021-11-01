@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>snyk</id>
-    <version>1.366.0</version>
+    <version>1.749.0</version>
     <title>Snyk</title>
     <authors>Snyk</authors>
     <owners>ducksecops</owners>
     <projectUrl>https://github.com/snyk/snyk</projectUrl>
     <licenseUrl>https://github.com/snyk/snyk/blob/master/LICENSE</licenseUrl>
     <iconUrl>https://avatars3.githubusercontent.com/u/12959162</iconUrl>
-    <copyright>Copyright © 2020. Snyk. All Rights Reserved</copyright>
+    <copyright>Copyright © 2021. Snyk. All Rights Reserved</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://support.snyk.io/hc/en-us</docsUrl>
     <bugTrackerUrl>https://github.com/snyk/snyk/issues</bugTrackerUrl>

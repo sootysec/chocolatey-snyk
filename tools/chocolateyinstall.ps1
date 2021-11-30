@@ -5,8 +5,8 @@ $fileLocation = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   PackageName  = $env:ChocolateyPackageName
   FileFullPath = "$fileLocation\snyk.exe"
-  Url          = 'https://github.com/snyk/snyk/releases/download/v1.778.0/snyk-win.exe'
-  Checksum     = '3918b4c416b37226d53b67bd097d17ada43b3ca9b26280ccf092129383f025e7'
+  Url          = 'https://github.com/snyk/snyk/releases/download/v1.779.0/snyk-win.exe'
+  Checksum     = 'fcf5c272b1c80d2bacb6a291bf431629402bf6fc5940d51f14776674bc28df75'
   ChecksumType = 'sha256'
 }
 

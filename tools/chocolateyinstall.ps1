@@ -1,13 +1,16 @@
-﻿$ErrorActionPreference = 'Stop'; # stop on all errors
+﻿$ErrorActionPreference = 'Stop'
 
-$fileLocation = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$url = 'https://github.com/kyverno/kyverno/releases/download/v1.5.1/kyverno-cli_v1.5.1_windows_x86_64.zip'
+$checksum = 'ed6916d7e6b5edee037f25af3df966a1882b444aa0fec7949e93869f8bf8d266'
 
-$packageArgs = @{
-  PackageName  = $env:ChocolateyPackageName
-  FileFullPath = "$fileLocation\snyk.exe"
-  Url          = 'https://github.com/snyk/snyk/releases/download/v1.780.0/snyk-win.exe'
-  Checksum     = '2652bb400160d306c07004390abc9a6226cc237be10423a3bd1e33bdf7902997'
-  ChecksumType = 'sha256'
+$unzipLocation = Split-Path -Parent $MyInvocation.MyCommand.Definition
+
+$packageParams = @{
+  PackageName   = "kyverno-cli"
+  UnzipLocation = $unzipLocation
+  Url           = $url
+  Checksum      = $checksum
+  ChecksumType  = 'sha256'
 }
 
-Get-ChocolateyWebFile @packageArgs
+Install-ChocolateyZipPackage @packageParams
